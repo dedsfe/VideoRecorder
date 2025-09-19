@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+
+    <style>
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        body{
+            background-color: black;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 15px;
+              align-items: center;
+            
+        }
+
+        img{
+            border-radius: 15px;
+            width: 95%;
+            height: 95%;
+        }
+        .but1{
+            background-color: bisque;
+            height: fit-content;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 25px;
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #3d8de9;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+             color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        button{
+            height: fit-content;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 25px;
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #3d8de9;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="buttons"> 
+                
+            
+            <button id="start-recording">
+                Gravar Video
+            </button>
+
+            <button id="stop-recording">
+                Parar de Gravar
+            </button>
+        </div>
+
+    
+
+        <img id="video" src="/video">
+
+        <button id="but", class="but1">
+                Clique Aqui para mudar a cor do fundo
+            </button>
+   
+    </div>
+
+</body>
+<script src="/static/main.js"></script>
+</html>
